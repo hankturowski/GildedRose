@@ -1,11 +1,3 @@
-//
-//  GildedRose.swift
-//  GildedRose
-//
-//  Created by Hank Turowski on 9/16/15.
-//
-//
-
 import XCTest
 
 class GildedRoseTests: XCTestCase {
@@ -18,12 +10,6 @@ class GildedRoseTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testItemClassIsUnchanged() {
-        let item = Item(name: "Test Item", sellIn: 10, quality: 5)
-        XCTAssertEqual(item.name, "Test Item", "class Item should not be changed")
-        let itemMirror = Mirror(reflecting: item)
     }
     
     func testExample() {
